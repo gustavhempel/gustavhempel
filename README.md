@@ -1,75 +1,36 @@
-# Professional Git Setup
+<!--
+This repository should be named exactly like your GitHub username
+so this README appears on your profile.
+-->
 
-Opinionated, practical Git defaults for daily development.
+# Gustav Hempel
 
-## What This Repository Provides
+Software developer focused on building reliable, maintainable products.
 
-- A shared Git config with safe defaults and useful aliases
-- A global `.gitignore` file for OS/editor noise
-- Install scripts for Windows (`PowerShell`) and macOS/Linux (`bash`)
+## About
 
-## Repository Layout
+- I care about clear architecture, strong code quality, and practical delivery.
+- I enjoy building tools, automations, and web applications.
+- I collaborate best on projects with clear goals and measurable outcomes.
 
-```text
-.
-├─ config/
-│  ├─ gitconfig
-│  └─ gitignore_global
-└─ scripts/
-   ├─ install.ps1
-   └─ install.sh
-```
+## Current Focus
 
-## Quick Start
+- Shipping small products end-to-end
+- Improving testing and CI/CD quality
+- Writing documentation that scales with the codebase
 
-### Windows (PowerShell)
+## Core Skills
 
-```powershell
-git clone <your-repo-url> "$HOME\\git-setup"
-cd "$HOME\\git-setup"
-.\scripts\install.ps1
-```
+- Git and GitHub workflows
+- Code review and maintainability
+- Automation and developer tooling
 
-### macOS / Linux
+## Featured Work
 
-```bash
-git clone <your-repo-url> "$HOME/git-setup"
-cd "$HOME/git-setup"
-chmod +x ./scripts/install.sh
-./scripts/install.sh
-```
+See my pinned repositories for projects I am actively maintaining.
 
-## What the Installer Changes
+## Contact
 
-- Adds `config/gitconfig` to your global Git config via `include.path`
-- Sets `core.excludesfile` to `config/gitignore_global`
-- Leaves your existing `~/.gitconfig` in place and only appends missing settings
-
-## Verify
-
-```bash
-git config --global --get-all include.path
-git config --global --get core.excludesfile
-git config --global --list --show-origin
-```
-
-## Customize
-
-- Update aliases and defaults in `config/gitconfig`
-- Add or remove patterns in `config/gitignore_global`
-- Keep personal identity local:
-
-```bash
-git config --global user.name "Your Name"
-git config --global user.email "you@example.com"
-```
-
-## Included Aliases
-
-- `git st` -> short status
-- `git lg` -> compact graph log
-- `git last` -> last commit with file stats
-- `git incoming` -> commits on upstream not in local branch
-- `git outgoing` -> commits in local branch not on upstream
-- `git conflicts` -> files currently in merge conflict
-- `git whoami` -> current Git name and email
+- GitHub: [@gustavhempel](https://github.com/gustavhempel)
+- LinkedIn: [Add your profile link](https://www.linkedin.com/)
+- Email: `add-your-email@example.com`
