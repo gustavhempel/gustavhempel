@@ -1,0 +1,60 @@
+[init]
+    defaultBranch = main
+
+[push]
+    default = simple
+    autoSetupRemote = true
+
+[pull]
+    ff = only
+
+[fetch]
+    prune = true
+    pruneTags = true
+
+[rebase]
+    autoStash = true
+
+[rerere]
+    enabled = true
+
+[merge]
+    conflictStyle = zdiff3
+    directoryRenames = conflict
+
+[diff]
+    algorithm = histogram
+    colorMoved = default
+
+[branch]
+    sort = -committerdate
+
+[tag]
+    sort = version:refname
+
+[commit]
+    verbose = true
+
+[color]
+    ui = auto
+
+[help]
+    autocorrect = prompt
+
+[alias]
+    st = status -sb
+    sw = switch
+    co = checkout
+    br = branch
+    brd = branch --sort=-committerdate
+    ci = commit
+    ca = commit --amend
+    aa = add --all
+    last = log -1 HEAD --stat
+    unstage = restore --staged --
+    discard = restore --
+    incoming = log --oneline --decorate HEAD..@{upstream}
+    outgoing = log --oneline --decorate @{upstream}..HEAD
+    conflicts = diff --name-only --diff-filter=U
+    whoami = !git config user.name && git config user.email
+    lg = log --graph --decorate --abbrev-commit --date=short --pretty=format:%C(yellow)%h%Creset\ %C(cyan)%ad%Creset\ %Cgreen(%cr)%Creset\ %s\ %C(magenta)%an%Creset
